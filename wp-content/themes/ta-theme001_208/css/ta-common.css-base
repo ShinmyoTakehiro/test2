@@ -1,0 +1,178 @@
+/*******************************************************************************************************/
+/*
+/* テックエイドの成長する自作ホームページWordPressテーマ『 TAテーマ001 (ta-theme001) 』
+/*
+/* ta-common.css: ( Latest Version 2.01 2017.03.29 )
+/*
+/* このプログラムの著作権、使用権、その他全ての権利はde集まれ株式会社に属します。
+/* The copyright, royalty and all the other rights of this program belong to deatsumare Corporation.
+/*
+/* File Version 履歴
+/* File Version 2.00 2016.01.28: first edition by Kotaro Kashiwamura.
+/* File Version 2.01 2017.03.29: ヘッダーフリーエリアに画像枠越え防止追加 by Kotaro Kashiwamura.
+/*
+/*******************************************************************************************************/
+
+@charset "UTF-8";
+
+/******************************************************/
+/*  TAフォーマット・共通（コモン）
+/******************************************************/
+/******* アディショナル表示の無効 *******/
+#additional-header,
+#additional-container {
+  display: none;
+}
+
+/******* 各コンテンツ内の画像の枠越えを防ぐ *******/
+#header_freearea img,
+#content img,
+#sidebar img,
+#sidebarsub img,
+#footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+/***** p */
+p img {
+  margin: 0.4em 0;
+  text-align: center;
+}
+
+/***** address */
+address {
+  font-style: normal;
+}
+
+/***** シングルCSS */
+#single-content {
+  width: 100%;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#single-content #single-img-content {
+  display: inline-block;
+  width: 100%;
+}
+
+#single-content .eyecatch-img img {
+  width: auto;
+  height: auto;
+}
+
+#content .eyecatch-img-top img {
+  width: auto;
+  height: auto;
+}
+
+#content .eyecatch-img-top {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#content .info-contents-fullimg img {
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+
+#content .info-contents-fullimg {
+  margin-bottom: 30px;
+  display: inline-block;
+  text-align: center;
+  clear: both;
+}
+
+/***** #searchform */
+#searchform label {
+  display: none;
+}
+
+/***** コメントCSS */
+#comments {
+  margin-top: 80px;
+}
+
+#reply-title,
+.comment-form-url,
+.comment-form-comment label,
+.form-allowed-tags {
+  display: none;
+}
+
+/* コメントリスト */
+#comments-list-title,
+#comment-form-title {
+  margin-top: 70px;
+}
+
+.comment-body {
+  width: 96%;
+  padding: 0 0 20px 0;
+  clear: both;
+  margin: 0 2% 30px 2%;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.comment-meta {
+  margin-top: 10px;
+}
+
+/* コメントフォーム */
+.logged-in-as,
+.comment-notes,
+.comment-form-author,
+.comment-form-email,
+.comment-form-comment,
+.form-submit {
+  display: inline-block;
+  width: 96%;
+  padding: 0 2%;
+  clear: both;
+  margin: 0.2em 0 0.5em;
+}
+
+.comment-form-author label,
+.comment-form-email label {
+  float: left;
+  display: block;
+  width: 30%;
+}
+
+.comment-form-author input,
+.comment-form-email input {
+  float: left;
+  width: 60%;
+}
+
+.comment-form-comment textarea {
+  float: left;
+  width: 90%;
+}
+
+/***** ウィジェットCSS */
+.ta-widget-container li {
+  margin-bottom: 0.5em;
+}
+
+/***** 汎用トップマージンゼロCSS */
+.mrgn-zero {
+  margin-top: 0;
+}
+
+/***** 汎用インラインブロック表示ショートコード */
+.ta-ib-100 {
+  width: 100%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.ta-left-content {
+  float: left;
+}
+
+.ta-right-content {
+  float: right;
+}

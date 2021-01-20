@@ -1,0 +1,59 @@
+/*******************************************************************************************************/
+/*
+/* テックエイドの成長する自作ホームページWordPressテーマ『 TAテーマ001 (ta-theme001) 』
+/*
+/* ta-reset.css: ( Latest Version 2.00 2015.12.14 )
+/*
+/* このプログラムの著作権、使用権、その他全ての権利はde集まれ株式会社に属します。
+/* The copyright, royalty and all the other rights of this program belong to deatsumare Corporation.
+/*
+/* File Version 履歴
+/* File Version 2.00 2015.12.14: first edition by Kotaro Kashiwamura.
+/*
+/*******************************************************************************************************/
+
+@charset "UTF-8";
+
+/******************************************************/
+/*  TAフォーマット・リセット
+/******************************************************/
+
+/******************* リセット *******************/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+address, article, aside, figure, figcaption, footer, header, hgroup, hr, legend, menu, nav, section, summary {
+  display: block;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img {
+  border: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+mark {
+  background: none;
+}
+
+input {
+  opacity: 1;
+}

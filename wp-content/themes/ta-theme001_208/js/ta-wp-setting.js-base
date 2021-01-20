@@ -1,0 +1,765 @@
+/**********************************************************************************************************/
+/*
+/* テックエイドの成長する自作ホームページWordPressテーマ『 TAテーマ001 (ta-theme001) 』
+/*
+/* ta-wp-setting.js: ( Latest Version 2.02 2017.03.11 )
+/*
+/* このプログラムの著作権、使用権、その他全ての権利はde集まれ株式会社に属します。
+/* The copyright, royalty and all the other rights of this program belong to deatsumare Corporation.
+/*
+/* File Version 履歴
+/* File Version 2.00 2016.03.05: first edition by Kotaro Kashiwamura.
+/* File Version 2.01 2016.06.20: ta_header_block_check,ta_header_block_check_img追加 by Kotaro Kashiwamura.
+/* File Version 2.02 2017.03.11: バックトゥートップスクロール修正、新規Win開追加 by Kotaro Kashiwamura.
+/*
+/**********************************************************************************************************/
+
+/******************* 全てのコンテンツのロードが終了したら実行（html要素変更、幅高さ検出処理が含まれるもの） *******************/
+jQuery(window).load( function() {
+  /******************* フレーム（サイズチェック） *******************/
+  if ( 'valid' == ta_common_frame_size_check_onoff && 'front' == current_page ) {
+    switch ( frame_type ) {
+      case 'main_sidebar':
+        var main_width_nopadding = header_width - sidebar_width - mainright_margin;
+        break;
+      case 'sidebar_main':
+        var main_width_nopadding = header_width - sidebar_width - mainleft_margin;
+        break;
+      case 'main_only':
+        var main_width_nopadding = header_width;
+        break;
+      case 'sidebarsub_main_sidebar':
+        var main_width_nopadding = header_width - sidebar_width - sidebarsub_width - mainleft_margin - mainright_margin;
+        break;
+    }
+    //#content
+    if ( 'valid' != ta_common_side2wrap_onoff ) {
+      jQuery('#content').css('height', '500px');
+      jQuery('#content').css('padding-top', '0');
+      jQuery('#content').css('background-color', '#008C00');
+      jQuery('#content').html('<p>メインコンテンツ</p><p class="size-check">幅　：' + Math.round(main_width_nopadding) + 'ピクセル</p><p class="size-check">高さ：500ピクセル</p>');
+      jQuery('#content').css('color', '#eeeeee');
+      jQuery('#content').css('font-weight', 'bold');
+      jQuery('#content').css('text-align', 'center');
+      jQuery('#content p').css('font-size', '14px');
+      jQuery('#content p:first-child').css('font-size', '18px');
+    } else {
+      jQuery('body.home #body-wrap').css('width', '100%');
+      jQuery('#content').css('height', '500px');
+      jQuery('#content').css('padding-top', '0');
+      jQuery('#content').css('background-color', '#008C00');
+      var wrap_width = jQuery('#wrap').width();
+      jQuery('#content').html('<p>メインコンテンツ</p><p class="size-check">幅　：' + Math.round(wrap_width) + 'ピクセル</p><p class="size-check">高さ：500ピクセル</p>');
+      jQuery('#content').css('color', '#eeeeee');
+      jQuery('#content').css('font-weight', 'bold');
+      jQuery('#content').css('text-align', 'center');
+      jQuery('#content p').css('font-size', '14px');
+      jQuery('#content p:first-child').css('font-size', '18px');
+    }
+    //#sidebar
+    jQuery('#container #sidebar').html('<p class="check-title">サイドバー</p><p class="size-check">幅　：' + Math.round(sidebar_width) + 'ピクセル</p><p class="size-check">高さ：500ピクセル</p>');
+    jQuery('#container #sidebar').css({'cssText':'height:500px!important;padding-top:0!important;background-color:#0000ff!important;color:#eeeeee!important;font-weight:bold!important;text-align:center!important;'});
+    jQuery('#container #sidebar p.size-check').css('font-size', '14px');
+    jQuery('#container #sidebar p.check-title').css('font-size', '18px');
+    if ( 'valid' == ta_common_side2wrap_onoff ) {
+      var wrap_height = jQuery('#wrap').height();
+      var outer_header_height = 0;
+      if ( 'none' != jQuery('#outer-header-container').css('display') ) {
+        var outer_header_height = jQuery('#outer-header-container').height();
+      }
+      jQuery('#outer-sidebar-container #sidebar').css('height', (wrap_height + outer_header_height - ta_common_sidebar2wrap_top_distance) + 'px');
+      jQuery('#outer-sidebar-container #sidebar').css('margin-top', ta_common_sidebar2wrap_top_distance);
+      jQuery('#outer-sidebar-container #sidebar').css('padding-top', '0');
+      jQuery('#outer-sidebar-container #sidebar').css('background-color', '#0000ff');
+      jQuery('#outer-sidebar-container').css('z-index', '555');
+      var var_sidebar_width = jQuery('#outer-sidebar-container #sidebar').width();
+      if ( 'valid' != ta_common_side2wrap_fixed_onoff ) {
+        jQuery('#outer-sidebar-container #sidebar').html('<p style="margin-top:' + (wrap_height/3) + 'px;">サイドバー</p><p class="size-check">幅　：' + Math.round(var_sidebar_width) + 'ピクセル</p><p class="size-check">高さ：メイン枠の高さ</p>');
+      } else {
+        jQuery('#outer-sidebar-container #sidebar').html('<p style="margin-top:' + (wrap_height/3) + 'px;">サイドバー</p><p class="size-check">（固定：スクロールしません）</p><p class="size-check">幅　：' + Math.round(var_sidebar_width) + 'ピクセル</p><p class="size-check">高さ：メイン枠の高さ</p>');
+      }
+      jQuery('#outer-sidebar-container #sidebar').css('color', '#eeeeee');
+      jQuery('#outer-sidebar-container #sidebar').css('font-weight', 'bold');
+      jQuery('#outer-sidebar-container #sidebar').css('text-align', 'center');
+      jQuery('#outer-sidebar-container #sidebar p').css('font-size', '14px');
+      jQuery('#outer-sidebar-container #sidebar p:first-child').css('font-size', '18px');
+    }
+    //#sidebarsub
+    jQuery('#container #sidebarsub').html('<p class="check-title">サブサイドバー</p><p class="size-check">幅　：' + Math.round(sidebarsub_width) + 'ピクセル</p><p class="size-check">高さ：500ピクセル</p>');
+    jQuery('#container #sidebarsub').css({'cssText':'height:500px!important;padding-top:0!important;background-color:#ff0000!important;color:#eeeeee!important;font-weight:bold!important;text-align:center!important;'});
+    jQuery('#container #sidebarsub p.size-check').css('font-size', '14px');
+    jQuery('#container #sidebarsub p.check-title').css('font-size', '18px');
+    if ( 'valid' == ta_common_side2wrap_onoff ) {
+      var wrap_height = jQuery('#wrap').height();
+      var outer_header_height = 0;
+      if ( 'none' != jQuery('#outer-header-container').css('display') ) {
+        var outer_header_height = jQuery('#outer-header-container').height();
+      }
+      jQuery('#outer-sidebarsub-container #sidebarsub').css('height', (wrap_height + outer_header_height - ta_common_sidebarsub2wrap_top_distance) + 'px');
+      jQuery('#outer-sidebarsub-container #sidebarsub').css('margin-top', ta_common_sidebarsub2wrap_top_distance);
+      jQuery('#outer-sidebarsub-container #sidebarsub').css('padding-top', '0');
+      jQuery('#outer-sidebarsub-container #sidebarsub').css('background-color', '#ff0000');
+      jQuery('#outer-sidebarsub-container').css('z-index', '555');
+      var var_sidebarsub_width = jQuery('#outer-sidebarsub-container #sidebarsub').width();
+      if ( 'valid' != ta_common_sidesub2wrap_fixed_onoff ) {
+        jQuery('#outer-sidebarsub-container #sidebarsub').html('<p style="margin-top:' + (wrap_height/3) + 'px;">サブサイドバー</p><p class="size-check">幅　：' + Math.round(var_sidebarsub_width) + 'ピクセル</p><p class="size-check">高さ：メイン枠の高さ</p>');
+      } else {
+        jQuery('#outer-sidebarsub-container #sidebarsub').html('<p style="margin-top:' + (wrap_height/3) + 'px;">サブサイドバー</p><p class="size-check">（固定：スクロールしません）</p><p class="size-check">幅　：' + Math.round(var_sidebarsub_width) + 'ピクセル</p><p class="size-check">高さ：メイン枠の高さ</p>');
+      }
+      jQuery('#outer-sidebarsub-container #sidebarsub').css('color', '#eeeeee');
+      jQuery('#outer-sidebarsub-container #sidebarsub').css('font-weight', 'bold');
+      jQuery('#outer-sidebarsub-container #sidebarsub').css('text-align', 'center');
+      jQuery('#outer-sidebarsub-container #sidebarsub p').css('font-size', '14px');
+      jQuery('#outer-sidebarsub-container #sidebarsub p:first-child').css('font-size', '18px');
+    }
+  }
+
+  /***** ヘッダーバナーエリアのサイズ（サイズチェック） *******************/
+  if ( 'valid' == ta_header_size_check ) {
+    //#header
+    jQuery('#outer-header-container #header').css('background-color', '#000000');
+    jQuery('#header-container #header').css('background-color', '#000000');
+    //#logo-group
+    jQuery('#outer-header-container #logo-group').css('background-color', '#FF0000');
+    jQuery('#header-container #logo-group').css('background-color', '#FF0000');
+    //#logo-group-h1-text
+    ta_header_block_check('#outer-header-container #logo-group-h1-text', 'h1表記');
+    ta_header_block_check('#header-container #logo-group-h1-text', 'h1表記');
+    //#logo-group-img
+    if (!ta_header_logoimgarea_off) {
+      ta_header_block_check_img('#outer-header-container #logo-group-img', 'ロゴ画像');
+      ta_header_block_check_img('#header-container #logo-group-img', 'ロゴ画像');
+    }
+    //#info-group
+    jQuery('#outer-header-container #info-group').css('background-color', '#008C00');
+    jQuery('#header-container #info-group').css('background-color', '#008C00');
+    //#ta-headertop-info-menu
+    ta_header_menu_block_check('#outer-header-container #ta-headertop-info-menu', '簡易メニュー');
+    ta_header_menu_block_check('#header-container #ta-headertop-info-menu', '簡易メニュー');
+    //#info-group-img
+    if (!ta_header_infoimgarea_off) {
+      ta_header_block_check_img('#outer-header-container #info-group-img', '連絡先画像');
+      ta_header_block_check_img('#header-container #info-group-img', '連絡先画像');
+    }
+    //#info-group .sns-group
+    ta_header_block_check('#outer-header-container #info-group .sns-group', 'SNS表記');
+    ta_header_block_check('#header-container #info-group .sns-group', 'SNS表記');
+    //#search-group
+    jQuery('#outer-header-container #search-group').css('background-color', '#0000FF');
+    jQuery('#header-container #search-group').css('background-color', '#0000FF');
+    //#ta-headertop-search-menu
+    ta_header_menu_block_check('#outer-header-container #ta-headertop-search-menu', '簡易メニュー');
+    ta_header_menu_block_check('#header-container #ta-headertop-search-menu', '簡易メニュー');
+    //#search
+    ta_header_block_check('#outer-header-container #search', '検索ボックス');
+    ta_header_block_check('#header-container #search', '検索ボックス');
+    //#search-group .sns-group
+    ta_header_block_check('#outer-header-container #search-group .sns-group', 'SNS表記');
+    ta_header_block_check('#header-container #search-group .sns-group', 'SNS表記');
+  }
+  
+  /***** グローバルメニューのサブメニューの幅 *******************/
+  jQuery('#ta-global-navi-container #ta-global-navi > ul > li:first-child').mouseover(function(){
+    var target_w = jQuery(this).width() * ta_header_glabalsubmenu_width / 100;
+    jQuery('#ta-global-navi-container #ta-global-navi > ul > li:first-child > ul li').css('width', target_w + 'px');
+  });
+  jQuery('#ta-global-navi-container #ta-global-navi > ul > li:not(:first-child)').mouseover(function(){
+    var target_w = jQuery(this).width() * ta_header_glabalsubmenu_width / 100;
+    jQuery('#ta-global-navi-container #ta-global-navi > ul > li:not(:first-child) > ul li').css('width', target_w + 'px');
+  });
+  jQuery('#ta-global-navi-container #ta-global-navi > ul > li:last-child').mouseover(function(){
+    var target_w = jQuery(this).width() * ta_header_glabalsubmenu_width / 100;
+    jQuery('#ta-global-navi-container #ta-global-navi > ul > li:last-child > ul').css('width', target_w + 'px');
+    var target_w = jQuery(this).width() * (100 - ta_header_glabalsubmenu_width) / 100;
+    jQuery('#ta-global-navi-container #ta-global-navi > ul > li:last-child > ul').css('margin-left', target_w + 'px');
+    var target_w = jQuery(this).width() * (- 2 * ta_header_glabalsubmenu_width) / 100;
+    jQuery('#ta-global-navi-container #ta-global-navi > ul > li:last-child > ul > li > ul').css('margin-left', target_w + 'px');
+  });
+  
+  /******************* サイドバー・サブサイドバーの高さ合わせ *******************/
+  var sidebar_top_distance = parseInt(ta_common_sidebar2wrap_top_distance, 10);
+  var sidebarsub_top_distance = parseInt(ta_common_sidebarsub2wrap_top_distance, 10);
+  var body_wrap_height = jQuery('#body-wrap').height();
+  var container_height = jQuery('#container').height();
+  if ( 'valid' == ta_sidebar_frame_arrange_height_onoff ) {
+    if ( 'valid' == ta_common_side2wrap_onoff ) {
+      jQuery('#outer-sidebar-container #sidebar').css('height', (body_wrap_height - sidebar_top_distance) + 'px');
+    } else {
+      var pad_top = parseInt(jQuery('#container #sidebar').css('padding-top'), 10);
+      var pad_bottom = parseInt(jQuery('#container #sidebar').css('padding-bottom'), 10);
+      var total_pad = pad_top + pad_bottom;
+      jQuery('#container #sidebar').css('min-height', (container_height - total_pad) + 'px');
+    }
+  }
+  if ( 'valid' == ta_sidebarsub_frame_arrange_height_onoff ) {
+    if ( 'valid' == ta_common_side2wrap_onoff ) {
+      jQuery('#outer-sidebarsub-container #sidebarsub').css('height', (body_wrap_height - sidebarsub_top_distance) + 'px');
+    } else {
+      var pad_top = parseInt(jQuery('#container #sidebarsub').css('padding-top'), 10);
+      var pad_bottom = parseInt(jQuery('#container #sidebarsub').css('padding-bottom'), 10);
+      var total_pad = pad_top + pad_bottom;
+      jQuery('#container #sidebarsub').css('min-height', (container_height - total_pad) + 'px');
+    }
+  }
+   
+  /***** フッター各ブロックサイズ（サイズチェック） *******************/
+  if ( 'valid' == ta_footer_block_size_check ) {
+    //#footer
+    jQuery('#content #footer').css('background-color', '#000000');
+    jQuery('#outer-footer-container #footer').css('background-color', '#000000');
+    //#footer-freearea-container
+    jQuery('#content #footer-freearea-container').css('background-color', '#FFFF00');
+    jQuery('#content #footer-freearea-container').css('height', '2em');
+    jQuery('#content #footer-freearea-container').html('フッターフリーエリア');
+    jQuery('#content #footer-freearea-container').css('text-align', 'left');
+    jQuery('#content #footer-freearea-container').css('font-size', '100%');
+    jQuery('#content #footer-freearea-container').css('font-weight', 'bold');
+    jQuery('#content #footer-freearea-container').css('color', '#000000');
+    jQuery('#outer-footer-container #footer-freearea-container').css('background-color', '#FFFF00');
+    jQuery('#outer-footer-container #footer-freearea-container').css('height', '2em');
+    jQuery('#outer-footer-container #footer-freearea-container').html('フッターフリーエリア');
+    jQuery('#outer-footer-container #footer-freearea-container').css('text-align', 'left');
+    jQuery('#outer-footer-container #footer-freearea-container').css('font-size', '100%');
+    jQuery('#outer-footer-container #footer-freearea-container').css('font-weight', 'bold');
+    jQuery('#outer-footer-container #footer-freearea-container').css('color', '#000000');
+    //#footer-group1-contents
+    jQuery('#content #footer-group1-contents').css('background-color', '#FF0000');
+    jQuery('#outer-footer-container #footer-group1-contents').css('background-color', '#FF0000');
+    //#footer-group1-contents-title
+    ta_block_check('#content #footer-group1-contents-title', 'ブロック１タイトルエリア');
+    ta_block_check('#outer-footer-container #footer-group1-contents-title', 'ブロック１タイトルエリア');
+    jQuery('#content #footer-group1-contents-title').css('border', 'none');
+    jQuery('#outer-footer-container #footer-group1-contents-title').css('border', 'none');
+    jQuery('#content #footer-group1-contents-title').css('padding-left', 0);
+    jQuery('#outer-footer-container #footer-group1-contents-title').css('padding-left', 0);
+    //#footer-image
+    ta_block_check_img('#content #footer-image', 'フッター画像エリア');
+    ta_block_check_img('#outer-footer-container #footer-image', 'フッター画像エリア');
+    //#footer-freearea
+    ta_block_check('#content #footer-freearea', 'フリーテキストエリア');
+    ta_block_check('#outer-footer-container #footer-freearea', 'フリーテキストエリア');
+    //#footer-sub-image
+    ta_block_check_img('#content #footer-sub-image', 'サブフッター画像エリア');
+    ta_block_check_img('#outer-footer-container #footer-sub-image', 'サブフッター画像エリア');
+    //#footer-group2-contents
+    jQuery('#content #footer-group2-contents').css('background-color', '#008C00');
+    jQuery('#outer-footer-container #footer-group2-contents').css('background-color', '#008C00');
+    //#footer-group2-contents-title
+    ta_block_check('#content #footer-group2-contents-title', 'ブロック２タイトルエリア');
+    ta_block_check('#outer-footer-container #footer-group2-contents-title', 'ブロック２タイトルエリア');
+    jQuery('#content #footer-group2-contents-title').css('border', 'none');
+    jQuery('#outer-footer-container #footer-group2-contents-title').css('border', 'none');
+    jQuery('#content #footer-group2-contents-title').css('padding-left', 0);
+    jQuery('#outer-footer-container #footer-group2-contents-title').css('padding-left', 0);
+    //#ta-footer-menu
+    ta_block_check('#content #ta-footer-menu', 'メニューエリア');
+    ta_block_check('#outer-footer-container #ta-footer-menu', 'メニューエリア');
+    //#footer-widget-container .ta-widget-container
+    ta_block_check('#content #footer-widget-container .ta-widget-container', 'ウィジェット');
+    ta_block_check('#outer-footer-container #footer-widget-container .ta-widget-container', 'ウィジェット');
+    //#copyright
+    jQuery('#content #copyright').css('background-color', '#0000FF');
+    jQuery('#outer-footer-container #copyright').css('background-color', '#0000FF');
+    //#copyright #copyright-content
+    ta_block_check('#content #copyright #copyright-content', 'コピーライト表記エリア');
+    ta_block_check('#outer-footer-container #copyright #copyright-content', 'コピーライト表記エリア');
+    jQuery('#content #copyright #copyright-content').css('display', 'inline-block');
+    jQuery('#outer-footer-container #copyright #copyright-content').css('display', 'inline-block');
+    jQuery('#content #copyright #copyright-content').css('text-align', 'center');
+    jQuery('#outer-footer-container #copyright #copyright-content').css('text-align', 'center');
+  }
+  
+  
+  /***** 一覧 （アーカイブ）のリンク時の新規ウィンドウ設定 *******************/
+  ta_newwin_onoff( ta_common_listpage_newwin_onoff, '#archive-list a' );
+  
+  
+  /***** トップ最新投稿ダイジェストのリンク時の新規ウィンドウ設定 *******************/
+  ta_newwin_onoff( ta_top_latestposts_newwin_onoff, '#main-whatsnew a' );
+  
+  
+  /***** トップ各種投稿ダイジェストのリンク時の新規ウィンドウ設定 *******************/
+  ta_newwin_onoff( ta_top_postdigest_newwin_onoff, '#main-catdigest a' );
+  
+  
+  /***** サイドバー最新投稿ダイジェストのリンク時の新規ウィンドウ設定 *******************/
+  ta_newwin_onoff( ta_sidebar_latestposts_newwin_onoff, '#sidebar-whatsnew a' );
+  
+  
+  /***** サイドバー各種投稿ダイジェストのリンク時の新規ウィンドウ設定 *******************/
+  ta_newwin_onoff( ta_sidebar_postdigest_newwin_onoff, '#sidebar-catdigest a' );
+  
+  
+  /***** サブサイドバー最新投稿ダイジェストのリンク時の新規ウィンドウ設定 *******************/
+  ta_newwin_onoff( ta_sidebarsub_latestposts_newwin_onoff, '#sidebarsub-whatsnew a' );
+  
+  
+  /***** サブサイドバー各種投稿ダイジェストのリンク時の新規ウィンドウ設定 *******************/
+  ta_newwin_onoff( ta_sidebarsub_postdigest_newwin_onoff, '#sidebarsub-catdigest a' );
+  
+  
+  /***** メインヘッドラインのリンク時の新規ウィンドウ設定 *******************/
+  ta_newwin_onoff( ta_main_headline_h2_newwin_onoff, '#header_freearea h2.header_title a' );
+  ta_newwin_onoff( ta_main_headline_h3_newwin_onoff, '#header_freearea h3.header_title a' );
+  ta_newwin_onoff( ta_main_headline_h4_newwin_onoff, '#header_freearea h4.header_title a' );
+  ta_newwin_onoff( ta_main_headline_h5_newwin_onoff, '#header_freearea h5.header_title a' );
+  ta_newwin_onoff( ta_main_headline_h2_newwin_onoff, '#main h2.title a' );
+  ta_newwin_onoff( ta_main_headline_h3_newwin_onoff, '#main h3.title a' );
+  ta_newwin_onoff( ta_main_headline_h4_newwin_onoff, '#main h4.title a' );
+  ta_newwin_onoff( ta_main_headline_h5_newwin_onoff, '#main h5.title a' );
+  ta_newwin_onoff( ta_main_deco1_newwin_onoff, '#main h6.deco1 a' );
+  ta_newwin_onoff( ta_main_deco2_newwin_onoff, '#main h6.deco2 a' );
+  ta_newwin_onoff( ta_main_deco3_newwin_onoff, '#main h6.deco3 a' );
+  ta_newwin_onoff( ta_main_deco4_newwin_onoff, '#main h6.deco4 a' );
+  
+  
+  /***** サイドバーヘッドラインのリンク時の新規ウィンドウ設定 *******************/
+  ta_newwin_onoff( ta_sidebar_headline_h2_newwin_onoff, '#sidebar h2.sidebar_title a' );
+  ta_newwin_onoff( ta_sidebar_headline_h3_newwin_onoff, '#sidebar h3.sidebar_title a' );
+  ta_newwin_onoff( ta_sidebar_headline_h4_newwin_onoff, '#sidebar h4.sidebar_title a' );
+  ta_newwin_onoff( ta_sidebar_headline_h5_newwin_onoff, '#sidebar h5.sidebar_title a' );
+  ta_newwin_onoff( ta_sidebar_deco1_newwin_onoff, '#sidebar h6.sidebar_deco1 a' );
+  ta_newwin_onoff( ta_sidebar_deco2_newwin_onoff, '#sidebar h6.sidebar_deco2 a' );
+  ta_newwin_onoff( ta_sidebar_deco3_newwin_onoff, '#sidebar h6.sidebar_deco3 a' );
+  ta_newwin_onoff( ta_sidebar_deco4_newwin_onoff, '#sidebar h6.sidebar_deco4 a' );
+  
+  
+  /***** サブサイドバーヘッドラインのリンク時の新規ウィンドウ設定 *******************/
+  ta_newwin_onoff( ta_sidebarsub_headline_h2_newwin_onoff, '#sidebarsub h2.sidebarsub_title a' );
+  ta_newwin_onoff( ta_sidebarsub_headline_h3_newwin_onoff, '#sidebarsub h3.sidebarsub_title a' );
+  ta_newwin_onoff( ta_sidebarsub_headline_h4_newwin_onoff, '#sidebarsub h4.sidebarsub_title a' );
+  ta_newwin_onoff( ta_sidebarsub_headline_h5_newwin_onoff, '#sidebarsub h5.sidebarsub_title a' );
+  
+  
+  /***** フッターヘッドラインのリンク時の新規ウィンドウ設定 *******************/
+  ta_newwin_onoff( ta_footer_headline_h2_newwin_onoff, '#footer-container h2.footer_title a' );
+  ta_newwin_onoff( ta_footer_headline_h3_newwin_onoff, '#footer-container h3.footer_title a' );
+  ta_newwin_onoff( ta_footer_headline_h4_newwin_onoff, '#footer-container h4.footer_title a' );
+  ta_newwin_onoff( ta_footer_headline_h5_newwin_onoff, '#footer-container h5.footer_title a' );
+
+});
+
+
+/***** リンク時の新規ウィンドウ設定関数 *******************/
+function ta_newwin_onoff(keyName, idName) {
+  if ( 'valid' == keyName ) {
+    jQuery( idName ).attr( 'target', '_blank' );
+  }
+}
+
+
+/***** ブロック確認関数 *******************/
+function ta_header_block_check(idName, repText) {
+  if(jQuery(idName).length){
+    var rep_h = jQuery(idName).height();
+  } else {
+    var rep_h = 0;
+  }
+  if ( rep_h != 0 ) {
+    jQuery(idName).css('height', '1.5em');
+    jQuery(idName).css('width', '60%');
+    jQuery(idName).html(repText);
+    jQuery(idName).css('display','inline-block');
+    jQuery(idName).css('text-align', 'center');
+    jQuery(idName).css('font-size', '12px');
+    jQuery(idName).css('line-height', '1.5em');
+    jQuery(idName).css('font-weight', 'bold');
+    jQuery(idName).css('color', '#000000');
+    jQuery(idName).css('background-color', 'rgba(255,255,255,0.9)');
+  }
+}
+
+function ta_header_menu_block_check(idName, repText) {
+  if(jQuery(idName).length){
+    var rep_h = jQuery(idName).height();
+  } else {
+    var rep_h = 0;
+  }
+  if ( rep_h != 0 ) {
+    jQuery(idName).css('height', '1.5em');
+    jQuery(idName).css('width', '100%');
+    jQuery(idName).css('margin-left', '0');
+    jQuery(idName).css('margin-right', '0');
+    jQuery(idName).html(repText);
+    jQuery(idName).css('display','inline-block');
+    jQuery(idName).css('text-align', 'center');
+    jQuery(idName).css('font-size', '12px');
+    jQuery(idName).css('line-height', '1.5em');
+    jQuery(idName).css('font-weight', 'bold');
+    jQuery(idName).css('color', '#000000');
+    jQuery(idName).css('background-color', 'rgba(255,255,255,0.9)');
+  }
+}
+
+function ta_header_block_check_img(idName, repText) {
+  if(jQuery(idName).length){
+    var rep_h = jQuery(idName).height();
+  } else {
+    var rep_h = 0;
+  }
+  if ( rep_h != 0 ) {
+    jQuery(idName).css('height', rep_h + 'px');
+    jQuery(idName).css('width', '60%');
+    jQuery(idName).html(repText);
+    jQuery(idName).css('display','inline-block');
+    jQuery(idName).css('text-align', 'center');
+    jQuery(idName).css('line-height',rep_h + 'px');
+    jQuery(idName).css('font-size', '12px');
+    jQuery(idName).css('font-weight', 'bold');
+    jQuery(idName).css('color', '#000000');
+    jQuery(idName).css('background-color', 'rgba(255,255,255,0.9)');
+  }
+}
+
+function ta_block_check(idName, repText) {
+  if(jQuery(idName).length){
+    var rep_h = jQuery(idName).height();
+    var rep_w = jQuery(idName).width();
+  } else {
+    var rep_h = 0;
+    var rep_w = 0;
+  }
+  if ( rep_h != 0 ) {
+    jQuery(idName).css('height', rep_h + 'px');
+    jQuery(idName).css('width', rep_w + 'px');
+    jQuery(idName).html(repText);
+    jQuery(idName).css('text-align', 'left');
+    jQuery(idName).css('font-size', '100%');
+    jQuery(idName).css('font-weight', 'bold');
+    jQuery(idName).css('color', '#000000');
+    jQuery(idName).css('background-color', 'rgba(255,255,255,0.9)');
+  }
+}
+
+function ta_block_check_img(idName, repText) {
+  if(jQuery(idName).length){
+    var rep_h = jQuery(idName).height();
+    if(jQuery(idName + ' img').length) {
+      var rep_w = jQuery(idName + ' img').width();
+    } else {
+      var rep_w = jQuery(idName).width();
+    }
+  } else {
+    var rep_h = 0;
+    var rep_w = 0;
+  }
+  if ( rep_h != 0 ) {
+    jQuery(idName).css('height', rep_h + 'px');
+    jQuery(idName).css('width', rep_w + 'px');
+    jQuery(idName).html(repText);
+    jQuery(idName).css('text-align', 'left');
+    jQuery(idName).css('font-size', '100%');
+    jQuery(idName).css('font-weight', 'bold');
+    jQuery(idName).css('color', '#000000');
+    jQuery(idName).css('background-color', 'rgba(255,255,255,0.9)');
+  }
+}
+
+
+/******************* 操作解析が可能になったら実行 *******************/
+jQuery( function() {
+  /******************* iPad処理 *******************/
+  if ( 'ipad' == ta_device_name ) {
+    jQuery('#body-wrap').css('min-width', wrap_width + 'px');
+    jQuery('#body-wrap').css('width', '100%');
+    jQuery('#outer-footer-container').css('min-width', wrap_width + 'px');
+    jQuery('#outer-footer-container').css('width', '100%');
+  }
+
+  /******************* バックトゥートップスクロール *******************/
+  if ( 'valid' == ta_common_back2top_text_fixed_onoff ) {
+    jQuery('#ta_backto_top').hide();
+    var scrollPos = jQuery(this).scrollTop();
+    var viewPos = ta_common_back2top_fm_top_amount;
+    if(scrollPos > viewPos) {
+      jQuery('#ta_backto_top').fadeIn('slow');
+    } else {
+      jQuery('#ta_backto_top').fadeOut('slow');
+    }
+  }
+
+  /***** モバイル時のメニューアコーディオン表示 *******************/
+  jQuery('#ta-mb-global-navi-container').hide();
+  jQuery('#ta-mb-global-navi-menubuttom').on( 'click', function() {
+    jQuery('#ta-mb-global-navi-container').slideToggle();
+  } );
+
+  /***** アディショナルモード時のアコーディオン表示 *******************/
+  jQuery('#additional-container').hide();
+  jQuery('#additional-trigger').on( 'click', function() {
+    if ( 'none' == jQuery('#additional-container').css('display') ) {
+      jQuery('#additional-icon').addClass('closer-icon');
+      jQuery('#additional-icon').removeClass('trigger-icon');
+    } else {
+      jQuery('#additional-icon').addClass('trigger-icon');
+      jQuery('#additional-icon').removeClass('closer-icon');
+    }
+    jQuery('#additional-container').slideToggle();
+    jQuery('html,body').animate({ scrollTop: 0 }, 'slow');
+    return false;
+  });
+
+  /***** アコーディオンショートコード用 *******************/
+  jQuery('.ta-accordion-title').each(function(){
+    var refid = jQuery(this).attr('id');
+    jQuery('#' + refid.replace('_title', '_disp')).hide();
+    jQuery('#' + refid).on( 'click', function() {
+      jQuery('#' + refid.replace('_title', '_disp')).slideToggle();
+    } );
+  });
+
+});
+
+
+/******************* バックトゥートップスクロール（表示の位置選択） *******************/
+jQuery(window).scroll( function () {
+  var scrollPos = jQuery(this).scrollTop();
+  var viewPos = ta_common_back2top_fm_top_amount;
+  if ( 'valid' == ta_common_back2top_text_fixed_onoff ) {
+    if(scrollPos > viewPos) {
+      jQuery('#ta_backto_top').fadeIn('slow');
+    } else {
+      jQuery('#ta_backto_top').fadeOut('slow');
+    }
+  }
+});
+
+
+/******************* リサイズしたら実行 *******************/
+jQuery(window).resize( function(){
+  /******************* フレーム（サイズチェック） *******************/
+  if ( 'valid' == ta_common_frame_size_check_onoff && 'front' == current_page ) {
+    switch ( frame_type ) {
+      case 'main_sidebar':
+        var main_width_nopadding = header_width - sidebar_width - mainright_margin;
+        break;
+      case 'sidebar_main':
+        var main_width_nopadding = header_width - sidebar_width - mainleft_margin;
+        break;
+      case 'main_only':
+        var main_width_nopadding = header_width;
+        break;
+      case 'sidebarsub_main_sidebar':
+        var main_width_nopadding = header_width - sidebar_width - sidebarsub_width - mainleft_margin - mainright_margin;
+        break;
+    }
+    //#content
+    if ( 'valid' != ta_common_side2wrap_onoff ) {
+      jQuery('#content').css('height', '500px');
+      jQuery('#content').css('padding-top', '0');
+      jQuery('#content').css('background-color', '#008C00');
+      jQuery('#content').html('<p>メインコンテンツ</p><p class="size-check">幅　：' + Math.round(main_width_nopadding) + 'ピクセル</p><p class="size-check">高さ：500ピクセル</p>');
+      jQuery('#content').css('color', '#eeeeee');
+      jQuery('#content').css('font-weight', 'bold');
+      jQuery('#content').css('text-align', 'center');
+      jQuery('#content p').css('font-size', '14px');
+      jQuery('#content p:first-child').css('font-size', '18px');
+    } else {
+      jQuery('body.home #body-wrap').css('width', '100%');
+      jQuery('#content').css('height', '500px');
+      jQuery('#content').css('padding-top', '0');
+      jQuery('#content').css('background-color', '#008C00');
+      var wrap_width = jQuery('#wrap').width();
+      jQuery('#content').html('<p>メインコンテンツ</p><p class="size-check">幅　：' + Math.round(wrap_width) + 'ピクセル</p><p class="size-check">高さ：500ピクセル</p>');
+      jQuery('#content').css('color', '#eeeeee');
+      jQuery('#content').css('font-weight', 'bold');
+      jQuery('#content').css('text-align', 'center');
+      jQuery('#content p').css('font-size', '14px');
+      jQuery('#content p:first-child').css('font-size', '18px');
+    }
+    //#sidebar
+    jQuery('#container #sidebar').html('<p class="check-title">サイドバー</p><p class="size-check">幅　：' + Math.round(sidebar_width) + 'ピクセル</p><p class="size-check">高さ：500ピクセル</p>');
+    jQuery('#container #sidebar').css({'cssText':'height:500px!important;padding-top:0!important;background-color:#0000ff!important;color:#eeeeee!important;font-weight:bold!important;text-align:center!important;'});
+    jQuery('#container #sidebar p.size-check').css('font-size', '14px');
+    jQuery('#container #sidebar p.check-title').css('font-size', '18px');
+    if ( 'valid' == ta_common_side2wrap_onoff ) {
+      var wrap_height = jQuery('#wrap').height();
+      var outer_header_height = 0;
+      if ( 'none' != jQuery('#outer-header-container').css('display') ) {
+        var outer_header_height = jQuery('#outer-header-container').height();
+      }
+      jQuery('#outer-sidebar-container #sidebar').css('height', (wrap_height + outer_header_height - ta_common_sidebar2wrap_top_distance) + 'px');
+      jQuery('#outer-sidebar-container #sidebar').css('margin-top', ta_common_sidebar2wrap_top_distance);
+      jQuery('#outer-sidebar-container #sidebar').css('padding-top', '0');
+      jQuery('#outer-sidebar-container #sidebar').css('background-color', '#0000ff');
+      jQuery('#outer-sidebar-container').css('z-index', '555');
+      var var_sidebar_width = jQuery('#outer-sidebar-container #sidebar').width();
+      if ( 'valid' != ta_common_side2wrap_fixed_onoff ) {
+        jQuery('#outer-sidebar-container #sidebar').html('<p style="margin-top:' + (wrap_height/3) + 'px;">サイドバー</p><p class="size-check">幅　：' + Math.round(var_sidebar_width) + 'ピクセル</p><p class="size-check">高さ：メイン枠の高さ</p>');
+      } else {
+        jQuery('#outer-sidebar-container #sidebar').html('<p style="margin-top:' + (wrap_height/3) + 'px;">サイドバー</p><p class="size-check">（固定：スクロールしません）</p><p class="size-check">幅　：' + Math.round(var_sidebar_width) + 'ピクセル</p><p class="size-check">高さ：メイン枠の高さ</p>');
+      }
+      jQuery('#outer-sidebar-container #sidebar').css('color', '#eeeeee');
+      jQuery('#outer-sidebar-container #sidebar').css('font-weight', 'bold');
+      jQuery('#outer-sidebar-container #sidebar').css('text-align', 'center');
+      jQuery('#outer-sidebar-container #sidebar p').css('font-size', '14px');
+      jQuery('#outer-sidebar-container #sidebar p:first-child').css('font-size', '18px');
+    }
+    //#sidebarsub
+    jQuery('#container #sidebarsub').html('<p class="check-title">サブサイドバー</p><p class="size-check">幅　：' + Math.round(sidebarsub_width) + 'ピクセル</p><p class="size-check">高さ：500ピクセル</p>');
+    jQuery('#container #sidebarsub').css({'cssText':'height:500px!important;padding-top:0!important;background-color:#ff0000!important;color:#eeeeee!important;font-weight:bold!important;text-align:center!important;'});
+    jQuery('#container #sidebarsub p.size-check').css('font-size', '14px');
+    jQuery('#container #sidebarsub p.check-title').css('font-size', '18px');
+    if ( 'valid' == ta_common_side2wrap_onoff ) {
+      var wrap_height = jQuery('#wrap').height();
+      var outer_header_height = 0;
+      if ( 'none' != jQuery('#outer-header-container').css('display') ) {
+        var outer_header_height = jQuery('#outer-header-container').height();
+      }
+      jQuery('#outer-sidebarsub-container #sidebarsub').css('height', (wrap_height + outer_header_height - ta_common_sidebarsub2wrap_top_distance) + 'px');
+      jQuery('#outer-sidebarsub-container #sidebarsub').css('margin-top', ta_common_sidebarsub2wrap_top_distance);
+      jQuery('#outer-sidebarsub-container #sidebarsub').css('padding-top', '0');
+      jQuery('#outer-sidebarsub-container #sidebarsub').css('background-color', '#ff0000');
+      jQuery('#outer-sidebarsub-container').css('z-index', '555');
+      var var_sidebarsub_width = jQuery('#outer-sidebarsub-container #sidebarsub').width();
+      if ( 'valid' != ta_common_sidesub2wrap_fixed_onoff ) {
+        jQuery('#outer-sidebarsub-container #sidebarsub').html('<p style="margin-top:' + (wrap_height/3) + 'px;">サブサイドバー</p><p class="size-check">幅　：' + Math.round(var_sidebarsub_width) + 'ピクセル</p><p class="size-check">高さ：メイン枠の高さ</p>');
+      } else {
+        jQuery('#outer-sidebarsub-container #sidebarsub').html('<p style="margin-top:' + (wrap_height/3) + 'px;">サブサイドバー</p><p class="size-check">（固定：スクロールしません）</p><p class="size-check">幅　：' + Math.round(var_sidebarsub_width) + 'ピクセル</p><p class="size-check">高さ：メイン枠の高さ</p>');
+      }
+      jQuery('#outer-sidebarsub-container #sidebarsub').css('color', '#eeeeee');
+      jQuery('#outer-sidebarsub-container #sidebarsub').css('font-weight', 'bold');
+      jQuery('#outer-sidebarsub-container #sidebarsub').css('text-align', 'center');
+      jQuery('#outer-sidebarsub-container #sidebarsub p').css('font-size', '14px');
+      jQuery('#outer-sidebarsub-container #sidebarsub p:first-child').css('font-size', '18px');
+    }
+  }
+  
+  /***** ヘッダーバナーエリアのサイズ（サイズチェック） *******************/
+  if ( 'valid' == ta_header_size_check ) {
+    //#header
+    jQuery('#outer-header-container #header').css('background-color', '#000000');
+    jQuery('#header-container #header').css('background-color', '#000000');
+    //#logo-group
+    jQuery('#outer-header-container #logo-group').css('background-color', '#FF0000');
+    jQuery('#header-container #logo-group').css('background-color', '#FF0000');
+    //#logo-group-h1-text
+    ta_header_block_check('#outer-header-container #logo-group-h1-text', 'h1表記');
+    ta_header_block_check('#header-container #logo-group-h1-text', 'h1表記');
+    //#logo-group-img
+    if (!ta_header_logoimgarea_off) {
+      ta_header_block_check_img('#outer-header-container #logo-group-img', 'ロゴ画像');
+      ta_header_block_check_img('#header-container #logo-group-img', 'ロゴ画像');
+    }
+    //#info-group
+    jQuery('#outer-header-container #info-group').css('background-color', '#008C00');
+    jQuery('#header-container #info-group').css('background-color', '#008C00');
+    //#ta-headertop-info-menu
+    ta_header_menu_block_check('#outer-header-container #ta-headertop-info-menu', '簡易メニュー');
+    ta_header_menu_block_check('#header-container #ta-headertop-info-menu', '簡易メニュー');
+    //#info-group-img
+    if (!ta_header_infoimgarea_off) {
+      ta_header_block_check_img('#outer-header-container #info-group-img', '連絡先画像');
+      ta_header_block_check_img('#header-container #info-group-img', '連絡先画像');
+    }
+    //#info-group .sns-group
+    ta_header_block_check('#outer-header-container #info-group .sns-group', 'SNS表記');
+    ta_header_block_check('#header-container #info-group .sns-group', 'SNS表記');
+    //#search-group
+    jQuery('#outer-header-container #search-group').css('background-color', '#0000FF');
+    jQuery('#header-container #search-group').css('background-color', '#0000FF');
+    //#ta-headertop-search-menu
+    ta_header_menu_block_check('#outer-header-container #ta-headertop-search-menu', '簡易メニュー');
+    ta_header_menu_block_check('#header-container #ta-headertop-search-menu', '簡易メニュー');
+    //#search
+    ta_header_block_check('#outer-header-container #search', '検索ボックス');
+    ta_header_block_check('#header-container #search', '検索ボックス');
+    //#search-group .sns-group
+    ta_header_block_check('#outer-header-container #search-group .sns-group', 'SNS表記');
+    ta_header_block_check('#header-container #search-group .sns-group', 'SNS表記');
+  }
+  
+  /******************* サイドバー・サブサイドバーの高さ合わせ *******************/
+  var sidebar_top_distance = parseInt(ta_common_sidebar2wrap_top_distance, 10);
+  var sidebarsub_top_distance = parseInt(ta_common_sidebarsub2wrap_top_distance, 10);
+  var body_wrap_height = jQuery('#body-wrap').height();
+  var container_height = jQuery('#container').height();
+  if ( 'valid' == ta_sidebar_frame_arrange_height_onoff ) {
+    if ( 'valid' == ta_common_side2wrap_onoff ) {
+      jQuery('#outer-sidebar-container #sidebar').css('height', (body_wrap_height - sidebar_top_distance) + 'px');
+    } else {
+      var pad_top = parseInt(jQuery('#container #sidebar').css('padding-top'), 10);
+      var pad_bottom = parseInt(jQuery('#container #sidebar').css('padding-bottom'), 10);
+      var total_pad = pad_top + pad_bottom;
+      jQuery('#container #sidebar').css('min-height', (container_height - total_pad) + 'px');
+    }
+  }
+  if ( 'valid' == ta_sidebarsub_frame_arrange_height_onoff ) {
+    if ( 'valid' == ta_common_side2wrap_onoff ) {
+      jQuery('#outer-sidebarsub-container #sidebarsub').css('height', (body_wrap_height - sidebarsub_top_distance) + 'px');
+    } else {
+      var pad_top = parseInt(jQuery('#container #sidebarsub').css('padding-top'), 10);
+      var pad_bottom = parseInt(jQuery('#container #sidebarsub').css('padding-bottom'), 10);
+      var total_pad = pad_top + pad_bottom;
+      jQuery('#container #sidebarsub').css('min-height', (container_height - total_pad) + 'px');
+    }
+  }
+  
+  /***** フッター各ブロックサイズ（サイズチェック） *******************/
+  if ( 'valid' == ta_footer_block_size_check ) {
+    //#footer
+    jQuery('#content #footer').css('background-color', '#000000');
+    jQuery('#outer-footer-container #footer').css('background-color', '#000000');
+    //#footer-freearea-container
+    jQuery('#content #footer-freearea-container').css('background-color', '#FFFF00');
+    jQuery('#content #footer-freearea-container').css('height', '2em');
+    jQuery('#content #footer-freearea-container').html('フッターフリーエリア');
+    jQuery('#content #footer-freearea-container').css('text-align', 'left');
+    jQuery('#content #footer-freearea-container').css('font-size', '100%');
+    jQuery('#content #footer-freearea-container').css('font-weight', 'bold');
+    jQuery('#content #footer-freearea-container').css('color', '#000000');
+    jQuery('#outer-footer-container #footer-freearea-container').css('background-color', '#FFFF00');
+    jQuery('#outer-footer-container #footer-freearea-container').css('height', '2em');
+    jQuery('#outer-footer-container #footer-freearea-container').html('フッターフリーエリア');
+    jQuery('#outer-footer-container #footer-freearea-container').css('text-align', 'left');
+    jQuery('#outer-footer-container #footer-freearea-container').css('font-size', '100%');
+    jQuery('#outer-footer-container #footer-freearea-container').css('font-weight', 'bold');
+    jQuery('#outer-footer-container #footer-freearea-container').css('color', '#000000');
+    //#footer-group1-contents
+    jQuery('#content #footer-group1-contents').css('background-color', '#FF0000');
+    jQuery('#outer-footer-container #footer-group1-contents').css('background-color', '#FF0000');
+    //#footer-group1-contents-title
+    ta_block_check('#content #footer-group1-contents-title', 'ブロック１タイトルエリア');
+    ta_block_check('#outer-footer-container #footer-group1-contents-title', 'ブロック１タイトルエリア');
+    jQuery('#content #footer-group1-contents-title').css('border', 'none');
+    jQuery('#outer-footer-container #footer-group1-contents-title').css('border', 'none');
+    jQuery('#content #footer-group1-contents-title').css('padding-left', 0);
+    jQuery('#outer-footer-container #footer-group1-contents-title').css('padding-left', 0);
+    //#footer-image
+    ta_block_check_img('#content #footer-image', 'フッター画像エリア');
+    ta_block_check_img('#outer-footer-container #footer-image', 'フッター画像エリア');
+    //#footer-freearea
+    ta_block_check('#content #footer-freearea', 'フリーテキストエリア');
+    ta_block_check('#outer-footer-container #footer-freearea', 'フリーテキストエリア');
+    //#footer-sub-image
+    ta_block_check_img('#content #footer-sub-image', 'サブフッター画像エリア');
+    ta_block_check_img('#outer-footer-container #footer-sub-image', 'サブフッター画像エリア');
+    //#footer-group2-contents
+    jQuery('#content #footer-group2-contents').css('background-color', '#008C00');
+    jQuery('#outer-footer-container #footer-group2-contents').css('background-color', '#008C00');
+    //#footer-group2-contents-title
+    ta_block_check('#content #footer-group2-contents-title', 'ブロック２タイトルエリア');
+    ta_block_check('#outer-footer-container #footer-group2-contents-title', 'ブロック２タイトルエリア');
+    jQuery('#content #footer-group2-contents-title').css('border', 'none');
+    jQuery('#outer-footer-container #footer-group2-contents-title').css('border', 'none');
+    jQuery('#content #footer-group2-contents-title').css('padding-left', 0);
+    jQuery('#outer-footer-container #footer-group2-contents-title').css('padding-left', 0);
+    //#ta-footer-menu
+    ta_block_check('#content #ta-footer-menu', 'メニューエリア');
+    ta_block_check('#outer-footer-container #ta-footer-menu', 'メニューエリア');
+    //#footer-widget-container .ta-widget-container
+    ta_block_check('#content #footer-widget-container .ta-widget-container', 'ウィジェット');
+    ta_block_check('#outer-footer-container #footer-widget-container .ta-widget-container', 'ウィジェット');
+    //#copyright
+    jQuery('#content #copyright').css('background-color', '#0000FF');
+    jQuery('#outer-footer-container #copyright').css('background-color', '#0000FF');
+    //#copyright #copyright-content
+    ta_block_check('#content #copyright #copyright-content', 'コピーライト表記エリア');
+    ta_block_check('#outer-footer-container #copyright #copyright-content', 'コピーライト表記エリア');
+    jQuery('#content #copyright #copyright-content').css('display', 'inline-block');
+    jQuery('#outer-footer-container #copyright #copyright-content').css('display', 'inline-block');
+    jQuery('#content #copyright #copyright-content').css('text-align', 'center');
+    jQuery('#outer-footer-container #copyright #copyright-content').css('text-align', 'center');
+  }
+  
+});

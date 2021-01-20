@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/******************************************************/
+/*  このCSSファイルは自動的に生成されています。
+/*  設定を変更すると上書きされますのでご注意ください。
+/*
+/*          de集まれ株式会社　技術支援(テックエイド)部
+/******************************************************/
+
+/******************************************************/
+/*  TAフォーマット・PHP to CSS・メンテナンス
+/******************************************************/
+
+/******************* メンテナンス *******************/
+/******************* リセット *******************/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+address, article, aside, figure, figcaption, footer, header, hgroup, hr, legend, menu, nav, section, summary {
+  display: block;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img {
+  border: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+mark {
+  background: none;
+}
+
+input {
+  opacity: 1;
+}
+
+body {
+  color: #3f1f00;
+  background-color: transparent;
+  font-family: "メイリオ", "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro";
+  font-size: 100%;
+  line-height: 1.3em;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #3a7fcf;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #66a5ed;
+  text-decoration: underline;
+}
+
+h1 {
+  padding-top: 100px;
+  font-size: 150%;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 50px;
+  font-size: 125%;
+  text-align: center;
+}
+
+p {
+  font-size: 100%;
+  text-align: center;
+  margin: 1em 0 1em;
+  padding: 1em 0 1em;
+}
+
+#copyright {
+  text-align: center;
+}
+
+@media only screen and (max-width : 640px){
+  /******* 共通 *******/
+  html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  html,
+  body {
+    width: 96%;
+    padding: 0 2%;
+    font-size: 85%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  body * {
+    text-align: center!important;
+  }
+  
+}
+
+

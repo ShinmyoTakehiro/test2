@@ -1,0 +1,3195 @@
+@charset "UTF-8";
+
+/******************************************************/
+/*  このCSSファイルは自動的に生成されています。
+/*  設定を変更すると上書きされますのでご注意ください。
+/*
+/*          de集まれ株式会社　技術支援(テックエイド)部
+/******************************************************/
+
+/******************************************************/
+/*  ヘッドラインに関する可変スタイル
+/******************************************************/
+
+#header_freearea h2.header_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#header_freearea h2.header_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#header_freearea h2.header_title a,
+#header_freearea h2.header_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#header_freearea h2.header_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#header_freearea h2.header_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 20px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 2%;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 5px solid #dd3333;
+  border-top: 1px solid #eeeeee;
+}
+
+#header_freearea h2.header_title {
+  color: #3f1f00;
+}
+
+#header_freearea h2.header_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#header_freearea h2.header_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#header_freearea h3.header_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#header_freearea h3.header_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#header_freearea h3.header_title a,
+#header_freearea h3.header_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#header_freearea h3.header_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#header_freearea h3.header_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 18px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 2%;
+  font-weight: bold;
+  padding-top: 2px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  border-left: 3px solid #dd3333;
+  border-bottom: 3px solid #eeeeee;
+}
+
+#header_freearea h3.header_title {
+  color: #3f1f00;
+}
+
+#header_freearea h3.header_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#header_freearea h3.header_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#header_freearea h4.header_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#header_freearea h4.header_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#header_freearea h4.header_title a,
+#header_freearea h4.header_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#header_freearea h4.header_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#header_freearea h4.header_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: bold;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+}
+
+#header_freearea h4.header_title {
+  color: #3f1f00;
+}
+
+#header_freearea h4.header_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#header_freearea h4.header_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#header_freearea h5.header_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#header_freearea h5.header_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#header_freearea h5.header_title a,
+#header_freearea h5.header_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#header_freearea h5.header_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#header_freearea h5.header_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#header_freearea h5.header_title {
+  color: #3f1f00;
+}
+
+#header_freearea h5.header_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#header_freearea h5.header_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#main h2.title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#main h2.title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#main h2.title a,
+#main h2.title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#main h2.title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#main h2.title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 20px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 2%;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 5px solid #dd3333;
+  border-top: 1px solid #eeeeee;
+}
+
+#main h2.title {
+  color: #3f1f00;
+}
+
+#main h2.title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#main h2.title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#main h3.title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#main h3.title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#main h3.title a,
+#main h3.title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#main h3.title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#main h3.title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 18px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 2%;
+  font-weight: bold;
+  padding-top: 2px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  border-left: 3px solid #dd3333;
+  border-bottom: 3px solid #eeeeee;
+}
+
+#main h3.title {
+  color: #3f1f00;
+}
+
+#main h3.title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#main h3.title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#main h4.title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#main h4.title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#main h4.title a,
+#main h4.title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#main h4.title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#main h4.title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: bold;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+}
+
+#main h4.title {
+  color: #3f1f00;
+}
+
+#main h4.title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#main h4.title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#main h5.title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#main h5.title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#main h5.title a,
+#main h5.title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#main h5.title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#main h5.title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#main h5.title {
+  color: #3f1f00;
+}
+
+#main h5.title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#main h5.title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#main h6.deco1::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#main h6.deco1 {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#main h6.deco1 a,
+#main h6.deco1 a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#main h6.deco1::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#main h6.deco1 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+}
+
+#main h6.deco1 {
+  color: #3f1f00;
+}
+
+#main h6.deco1 a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#main h6.deco1 a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#main h6.deco2::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#main h6.deco2 {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#main h6.deco2 a,
+#main h6.deco2 a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#main h6.deco2::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#main h6.deco2 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+}
+
+#main h6.deco2 {
+  color: #3f1f00;
+}
+
+#main h6.deco2 a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#main h6.deco2 a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#main h6.deco3::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#main h6.deco3 {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#main h6.deco3 a,
+#main h6.deco3 a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#main h6.deco3::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#main h6.deco3 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+}
+
+#main h6.deco3 {
+  color: #3f1f00;
+}
+
+#main h6.deco3 a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#main h6.deco3 a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#main h6.deco4::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#main h6.deco4 {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#main h6.deco4 a,
+#main h6.deco4 a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#main h6.deco4::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#main h6.deco4 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+}
+
+#main h6.deco4 {
+  color: #3f1f00;
+}
+
+#main h6.deco4 a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#main h6.deco4 a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#sidebar h2.sidebar_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebar h2.sidebar_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#sidebar h2.sidebar_title a,
+#sidebar h2.sidebar_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#sidebar h2.sidebar_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebar h2.sidebar_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 5%;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 3px solid #dd3333;
+  border-top: 1px solid #eeeeee;
+}
+
+#sidebar h2.sidebar_title {
+  color: #3f1f00;
+}
+
+#sidebar h2.sidebar_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#sidebar h2.sidebar_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#sidebar h3.sidebar_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebar h3.sidebar_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#sidebar h3.sidebar_title a,
+#sidebar h3.sidebar_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#sidebar h3.sidebar_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebar h3.sidebar_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 5%;
+  font-weight: normal;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+  border-left: 5px solid #dd3333;
+  border-bottom: 3px solid #aaaaaa;
+}
+
+#sidebar h3.sidebar_title {
+  color: #3f1f00;
+}
+
+#sidebar h3.sidebar_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#sidebar h3.sidebar_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#sidebar h4.sidebar_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebar h4.sidebar_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#sidebar h4.sidebar_title a,
+#sidebar h4.sidebar_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#sidebar h4.sidebar_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebar h4.sidebar_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 15px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: bold;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+#sidebar h4.sidebar_title {
+  color: #3f1f00;
+}
+
+#sidebar h4.sidebar_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#sidebar h4.sidebar_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#sidebar h5.sidebar_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebar h5.sidebar_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#sidebar h5.sidebar_title a,
+#sidebar h5.sidebar_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#sidebar h5.sidebar_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebar h5.sidebar_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 13.5px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  text-align: center;
+  padding-left: 0%;
+  font-weight: normal;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #aaaaaa;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  background-color: #00c0c0;
+  border-radius: 0px;
+}
+
+#sidebar h5.sidebar_title {
+  color: #ffffff;
+}
+
+#sidebar h5.sidebar_title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#sidebar h5.sidebar_title a:hover {
+  color: #dddddd;
+  text-decoration: none;
+}
+
+#sidebar h6.sidebar_deco1::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebar h6.sidebar_deco1 {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#sidebar h6.sidebar_deco1 a,
+#sidebar h6.sidebar_deco1 a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#sidebar h6.sidebar_deco1::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebar h6.sidebar_deco1 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+}
+
+#sidebar h6.sidebar_deco1 {
+  color: #3f1f00;
+}
+
+#sidebar h6.sidebar_deco1 a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#sidebar h6.sidebar_deco1 a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#sidebar h6.sidebar_deco2::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebar h6.sidebar_deco2 {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#sidebar h6.sidebar_deco2 a,
+#sidebar h6.sidebar_deco2 a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#sidebar h6.sidebar_deco2::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebar h6.sidebar_deco2 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+}
+
+#sidebar h6.sidebar_deco2 {
+  color: #3f1f00;
+}
+
+#sidebar h6.sidebar_deco2 a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#sidebar h6.sidebar_deco2 a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#sidebar h6.sidebar_deco3::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebar h6.sidebar_deco3 {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#sidebar h6.sidebar_deco3 a,
+#sidebar h6.sidebar_deco3 a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#sidebar h6.sidebar_deco3::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebar h6.sidebar_deco3 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+}
+
+#sidebar h6.sidebar_deco3 {
+  color: #3f1f00;
+}
+
+#sidebar h6.sidebar_deco3 a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#sidebar h6.sidebar_deco3 a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#sidebar h6.sidebar_deco4::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebar h6.sidebar_deco4 {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#sidebar h6.sidebar_deco4 a,
+#sidebar h6.sidebar_deco4 a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#sidebar h6.sidebar_deco4::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebar h6.sidebar_deco4 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+}
+
+#sidebar h6.sidebar_deco4 {
+  color: #3f1f00;
+}
+
+#sidebar h6.sidebar_deco4 a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#sidebar h6.sidebar_deco4 a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#sidebarsub h2.sidebarsub_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebarsub h2.sidebarsub_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#sidebarsub h2.sidebarsub_title a,
+#sidebarsub h2.sidebarsub_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#sidebarsub h2.sidebarsub_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebarsub h2.sidebarsub_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 5%;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  width: 95%;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  background-color: #dd3333;
+  border-radius: 8px;
+}
+
+#sidebarsub h2.sidebarsub_title {
+  color: #ffffff;
+}
+
+#sidebarsub h2.sidebarsub_title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#sidebarsub h2.sidebarsub_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#sidebarsub h3.sidebarsub_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebarsub h3.sidebarsub_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#sidebarsub h3.sidebarsub_title a,
+#sidebarsub h3.sidebarsub_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#sidebarsub h3.sidebarsub_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebarsub h3.sidebarsub_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 5%;
+  font-weight: normal;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+  border-left: 5px solid #dd3333;
+  border-bottom: 3px solid #aaaaaa;
+}
+
+#sidebarsub h3.sidebarsub_title {
+  color: #3f1f00;
+}
+
+#sidebarsub h3.sidebarsub_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#sidebarsub h3.sidebarsub_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#sidebarsub h4.sidebarsub_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebarsub h4.sidebarsub_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#sidebarsub h4.sidebarsub_title a,
+#sidebarsub h4.sidebarsub_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#sidebarsub h4.sidebarsub_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebarsub h4.sidebarsub_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 15px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: bold;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+#sidebarsub h4.sidebarsub_title {
+  color: #3f1f00;
+}
+
+#sidebarsub h4.sidebarsub_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#sidebarsub h4.sidebarsub_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#sidebarsub h5.sidebarsub_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebarsub h5.sidebarsub_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#sidebarsub h5.sidebarsub_title a,
+#sidebarsub h5.sidebarsub_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#sidebarsub h5.sidebarsub_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#sidebarsub h5.sidebarsub_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#sidebarsub h5.sidebarsub_title {
+  color: #3f1f00;
+}
+
+#sidebarsub h5.sidebarsub_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#sidebarsub h5.sidebarsub_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#content #footer-container h2.footer_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#content #footer-container h2.footer_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#content #footer-container h2.footer_title a,
+#content #footer-container h2.footer_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#content #footer-container h2.footer_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#content #footer-container h2.footer_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 20px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 2%;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 5px solid #dd3333;
+  border-top: 1px solid #eeeeee;
+}
+
+#content #footer-container h2.footer_title {
+  color: #3f1f00;
+}
+
+#content #footer-container h2.footer_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#content #footer-container h2.footer_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#content #footer-container h3.footer_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#content #footer-container h3.footer_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#content #footer-container h3.footer_title a,
+#content #footer-container h3.footer_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#content #footer-container h3.footer_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#content #footer-container h3.footer_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 18px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 2%;
+  font-weight: bold;
+  padding-top: 2px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  border-left: 3px solid #dd3333;
+  border-bottom: 3px solid #eeeeee;
+}
+
+#content #footer-container h3.footer_title {
+  color: #3f1f00;
+}
+
+#content #footer-container h3.footer_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#content #footer-container h3.footer_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#content #footer-container h4.footer_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#content #footer-container h4.footer_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#content #footer-container h4.footer_title a,
+#content #footer-container h4.footer_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#content #footer-container h4.footer_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#content #footer-container h4.footer_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: bold;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+}
+
+#content #footer-container h4.footer_title {
+  color: #3f1f00;
+}
+
+#content #footer-container h4.footer_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#content #footer-container h4.footer_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#content #footer-container h5.footer_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#content #footer-container h5.footer_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#content #footer-container h5.footer_title a,
+#content #footer-container h5.footer_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#content #footer-container h5.footer_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#content #footer-container h5.footer_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#content #footer-container h5.footer_title {
+  color: #3f1f00;
+}
+
+#content #footer-container h5.footer_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#content #footer-container h5.footer_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#outer-footer-container #footer-container h2.footer_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#outer-footer-container #footer-container h2.footer_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#outer-footer-container #footer-container h2.footer_title a,
+#outer-footer-container #footer-container h2.footer_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#outer-footer-container #footer-container h2.footer_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#outer-footer-container #footer-container h2.footer_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 20px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 2%;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 5px solid #dd3333;
+  border-top: 1px solid #eeeeee;
+}
+
+#outer-footer-container #footer-container h2.footer_title {
+  color: #3f1f00;
+}
+
+#outer-footer-container #footer-container h2.footer_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#outer-footer-container #footer-container h2.footer_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#outer-footer-container #footer-container h3.footer_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#outer-footer-container #footer-container h3.footer_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#outer-footer-container #footer-container h3.footer_title a,
+#outer-footer-container #footer-container h3.footer_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#outer-footer-container #footer-container h3.footer_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#outer-footer-container #footer-container h3.footer_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 18px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 2%;
+  font-weight: bold;
+  padding-top: 2px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  border-left: 3px solid #dd3333;
+  border-bottom: 3px solid #eeeeee;
+}
+
+#outer-footer-container #footer-container h3.footer_title {
+  color: #3f1f00;
+}
+
+#outer-footer-container #footer-container h3.footer_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#outer-footer-container #footer-container h3.footer_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#outer-footer-container #footer-container h4.footer_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#outer-footer-container #footer-container h4.footer_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#outer-footer-container #footer-container h4.footer_title a,
+#outer-footer-container #footer-container h4.footer_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#outer-footer-container #footer-container h4.footer_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#outer-footer-container #footer-container h4.footer_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: bold;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+}
+
+#outer-footer-container #footer-container h4.footer_title {
+  color: #3f1f00;
+}
+
+#outer-footer-container #footer-container h4.footer_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#outer-footer-container #footer-container h4.footer_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+#outer-footer-container #footer-container h5.footer_title::before {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  position: static;
+  content: normal;
+  margin: auto;
+  display: inline;
+  width: auto;
+  height: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#outer-footer-container #footer-container h5.footer_title {
+  width: auto;
+  box-sizing: border-box;
+  position: static;
+  vertical-align: baseline;
+  text-align: left;
+  border: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  text-shadow: none;
+  all: initial;
+  display: block;
+}
+
+#outer-footer-container #footer-container h5.footer_title a,
+#outer-footer-container #footer-container h5.footer_title a:hover {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#outer-footer-container #footer-container h5.footer_title::after {
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  content: normal;
+  position: static;
+  display: inline;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: auto;
+  background: none;
+  border-radius: 0;
+  all: initial;
+  font-size: 100%;
+}
+
+#outer-footer-container #footer-container h5.footer_title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  padding-left: 0%;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#outer-footer-container #footer-container h5.footer_title {
+  color: #3f1f00;
+}
+
+#outer-footer-container #footer-container h5.footer_title a {
+  color: #3f1f00;
+  text-decoration: none;
+}
+
+#outer-footer-container #footer-container h5.footer_title a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+

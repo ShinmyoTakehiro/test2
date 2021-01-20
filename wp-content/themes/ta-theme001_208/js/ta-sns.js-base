@@ -1,0 +1,90 @@
+/*******************************************************************************************************/
+/*
+/* テックエイドの成長する自作ホームページWordPressテーマ『 TAテーマ001 (ta-theme001) 』
+/*
+/* ta-sns.js: ( Latest Version 2.01 2017.02.26 )
+/*
+/* このプログラムの著作権、使用権、その他全ての権利はde集まれ株式会社に属します。
+/* The copyright, royalty and all the other rights of this program belong to deatsumare Corporation.
+/*
+/* File Version 履歴
+/* File Version 2.00 2016.02.21: first edition by Kotaro Kashiwamura.
+/* File Version 2.01 2017.02.26: 体裁整理 by Kotaro Kashiwamura.
+/*
+/*******************************************************************************************************/
+
+jQuery(window).load( function() {
+  //ツイートボタンを設置
+  if ( 'on' == header_sns_twitter ) {
+    jQuery(".header-sns-tweet").append('<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>');
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+   }
+  
+  if ( 'on' == main_sns_twitter ) {
+    jQuery(".main-sns-tweet").append('<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>');
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  }
+
+  //はてなボタンを設置
+  if ( 'on' == header_sns_hatebu ) {
+    if ("https:" == document.location.protocol) {
+      jQuery(".header-sns-hatebu").append('<a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async="async"></script>');
+    } else {
+      jQuery(".header-sns-hatebu").append('<a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>');
+    }
+  }
+  
+  if ( 'on' == main_sns_hatebu ) {
+    if ("https:" == document.location.protocol) {
+      jQuery(".main-sns-hatebu").append('<a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async="async"></script>');
+    } else {
+      jQuery(".main-sns-hatebu").append('<a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>');
+    }
+  }
+
+  //プラス1ボタンを設置
+  if ( 'on' == header_sns_gplus ) {
+    jQuery(".header-sns-gplus").append('<div class="g-plusone" data-size="medium"></div>');
+    window.___gcfg = {lang: 'ja'};
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/platform.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  }
+  
+  if ( 'on' == main_sns_gplus ) {
+    jQuery(".main-sns-gplus").append('<div class="g-plusone" data-size="medium"></div>');
+    window.___gcfg = {lang: 'ja'};
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/platform.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  }
+
+  //いいねボタンを設置
+  if ( 'on' == header_sns_facebook ) {
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    jQuery(".header-sns-fb-like").append('<div class="fb-like" data-width="110" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>');
+  }
+  
+  if ( 'on' == main_sns_facebook ) {
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    jQuery(".main-sns-fb-like").append('<div class="fb-like" data-width="110" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>');
+  }
+
+});
+

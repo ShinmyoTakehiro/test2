@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/******************************************************/
+/*  このCSSファイルは自動的に生成されています。
+/*  設定を変更すると上書きされますのでご注意ください。
+/*
+/*          de集まれ株式会社　技術支援(テックエイド)部
+/******************************************************/
+
+/******************************************************/
+/*  レスポンシブヘッドラインに関する可変スタイル
+/******************************************************/
+
+@media only screen and (max-width : 640px){
+/***** for main */
+  #main h2.title {
+    font-size: 120%!important;
+  }
+  #main h3.title {
+    font-size: 110%!important;
+  }
+  #main h4.title {
+    font-size: 100%!important;
+  }
+  #main h5.title {
+    font-size: 100%!important;
+  }
+  #main h6.deco1 {
+    font-size: 100%!important;
+  }
+  #main h6.deco2 {
+    font-size: 100%!important;
+  }
+  #main h6.deco3 {
+    font-size: 100%!important;
+  }
+  #main h6.deco4 {
+    font-size: 100%!important;
+  }
+
+/***** for sidebar */
+  #sidebar h2.sidebar_title {
+    font-size: 120%!important;
+  }
+  #sidebar h3.sidebar_title {
+    font-size: 110%!important;
+  }
+  #sidebar h4.sidebar_title {
+    font-size: 100%!important;
+  }
+  #sidebar h5.sidebar_title {
+    font-size: 100%!important;
+  }
+  #sidebar h6.sidebar_deco1 {
+    font-size: 100%!important;
+  }
+  #sidebar h6.sidebar_deco2 {
+    font-size: 100%!important;
+  }
+  #sidebar h6.sidebar_deco3 {
+    font-size: 100%!important;
+  }
+  #sidebar h6.sidebar_deco4 {
+    font-size: 100%!important;
+  }
+
+/***** for sidebarsub */
+  #sidebarsub h2.sidebarsub_title {
+    font-size: 120%!important;
+  }
+  #sidebarsub h3.sidebarsub_title {
+    font-size: 110%!important;
+  }
+  #sidebarsub h4.sidebarsub_title {
+    font-size: 100%!important;
+  }
+  #sidebarsub h5.sidebarsub_title {
+    font-size: 100%!important;
+  }
+
+/***** for footer */
+  #footer h2.footer_title {
+    font-size: 120%!important;
+  }
+  #footer h3.footer_title {
+    font-size: 110%!important;
+  }
+  #footer h4.footer_title {
+    font-size: 100%!important;
+  }
+  #footer h5.footer_title {
+    font-size: 100%!important;
+  }
+}

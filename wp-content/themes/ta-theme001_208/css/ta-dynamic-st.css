@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+/******************************************************/
+/*  このCSSファイルは自動的に生成されています。
+/*  設定を変更すると上書きされますのでご注意ください。
+/*
+/*          de集まれ株式会社　技術支援(テックエイド)部
+/******************************************************/
+
+/******************************************************/
+/*  TAショートコード
+/******************************************************/
+
+/***** TA汎用メニューCSS */
+/***** TA汎用メニューに関する可変スタイル */
+#header_freearea .ta-versatile-menu1 > ul > li,
+#main .ta-versatile-menu1 > ul > li,
+#sidebar .ta-versatile-menu1 > ul > li,
+#sidebarsub .ta-versatile-menu1 > ul > li,
+#footer .ta-versatile-menu1 > ul > li {
+  width: 100%;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#header_freearea .ta-versatile-menu1 > ul > li a,
+#main .ta-versatile-menu1 > ul > li a,
+#sidebar .ta-versatile-menu1 > ul > li a,
+#sidebarsub .ta-versatile-menu1 > ul > li a,
+#footer .ta-versatile-menu1 > ul > li a {
+  width: 100%;
+  font-size: 100%;
+  font-weight: normal;
+  color: #000000;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+#header_freearea .ta-versatile-menu1 > ul > li a:hover,
+#main .ta-versatile-menu1 > ul > li a:hover,
+#sidebar .ta-versatile-menu1 > ul > li a:hover,
+#sidebarsub .ta-versatile-menu1 > ul > li a:hover,
+#footer .ta-versatile-menu1 > ul > li a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+/***** TA汎用メニューに関する可変スタイル */
+#header_freearea .ta-versatile-menu2 > ul > li,
+#main .ta-versatile-menu2 > ul > li,
+#sidebar .ta-versatile-menu2 > ul > li,
+#sidebarsub .ta-versatile-menu2 > ul > li,
+#footer .ta-versatile-menu2 > ul > li {
+  width: 100%;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#header_freearea .ta-versatile-menu2 > ul > li a,
+#main .ta-versatile-menu2 > ul > li a,
+#sidebar .ta-versatile-menu2 > ul > li a,
+#sidebarsub .ta-versatile-menu2 > ul > li a,
+#footer .ta-versatile-menu2 > ul > li a {
+  width: 100%;
+  font-size: 100%;
+  font-weight: normal;
+  color: #000000;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+#header_freearea .ta-versatile-menu2 > ul > li a:hover,
+#main .ta-versatile-menu2 > ul > li a:hover,
+#sidebar .ta-versatile-menu2 > ul > li a:hover,
+#sidebarsub .ta-versatile-menu2 > ul > li a:hover,
+#footer .ta-versatile-menu2 > ul > li a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+/***** TA汎用メニューに関する可変スタイル */
+#header_freearea .ta-versatile-menu3 > ul > li,
+#main .ta-versatile-menu3 > ul > li,
+#sidebar .ta-versatile-menu3 > ul > li,
+#sidebarsub .ta-versatile-menu3 > ul > li,
+#footer .ta-versatile-menu3 > ul > li {
+  width: 100%;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#header_freearea .ta-versatile-menu3 > ul > li a,
+#main .ta-versatile-menu3 > ul > li a,
+#sidebar .ta-versatile-menu3 > ul > li a,
+#sidebarsub .ta-versatile-menu3 > ul > li a,
+#footer .ta-versatile-menu3 > ul > li a {
+  width: 100%;
+  font-size: 100%;
+  font-weight: normal;
+  color: #000000;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+#header_freearea .ta-versatile-menu3 > ul > li a:hover,
+#main .ta-versatile-menu3 > ul > li a:hover,
+#sidebar .ta-versatile-menu3 > ul > li a:hover,
+#sidebarsub .ta-versatile-menu3 > ul > li a:hover,
+#footer .ta-versatile-menu3 > ul > li a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+/***** TA汎用メニューに関する可変スタイル */
+#header_freearea .ta-versatile-menu4 > ul > li,
+#main .ta-versatile-menu4 > ul > li,
+#sidebar .ta-versatile-menu4 > ul > li,
+#sidebarsub .ta-versatile-menu4 > ul > li,
+#footer .ta-versatile-menu4 > ul > li {
+  width: 100%;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#header_freearea .ta-versatile-menu4 > ul > li a,
+#main .ta-versatile-menu4 > ul > li a,
+#sidebar .ta-versatile-menu4 > ul > li a,
+#sidebarsub .ta-versatile-menu4 > ul > li a,
+#footer .ta-versatile-menu4 > ul > li a {
+  width: 100%;
+  font-size: 100%;
+  font-weight: normal;
+  color: #000000;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+#header_freearea .ta-versatile-menu4 > ul > li a:hover,
+#main .ta-versatile-menu4 > ul > li a:hover,
+#sidebar .ta-versatile-menu4 > ul > li a:hover,
+#sidebarsub .ta-versatile-menu4 > ul > li a:hover,
+#footer .ta-versatile-menu4 > ul > li a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+/***** TA汎用メニューに関する可変スタイル */
+#header_freearea .ta-versatile-menu5 > ul > li,
+#main .ta-versatile-menu5 > ul > li,
+#sidebar .ta-versatile-menu5 > ul > li,
+#sidebarsub .ta-versatile-menu5 > ul > li,
+#footer .ta-versatile-menu5 > ul > li {
+  width: 100%;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#header_freearea .ta-versatile-menu5 > ul > li a,
+#main .ta-versatile-menu5 > ul > li a,
+#sidebar .ta-versatile-menu5 > ul > li a,
+#sidebarsub .ta-versatile-menu5 > ul > li a,
+#footer .ta-versatile-menu5 > ul > li a {
+  width: 100%;
+  font-size: 100%;
+  font-weight: normal;
+  color: #000000;
+  line-height: 1.3em;
+  min-height: 1.3em;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+#header_freearea .ta-versatile-menu5 > ul > li a:hover,
+#main .ta-versatile-menu5 > ul > li a:hover,
+#sidebar .ta-versatile-menu5 > ul > li a:hover,
+#sidebarsub .ta-versatile-menu5 > ul > li a:hover,
+#footer .ta-versatile-menu5 > ul > li a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+.ta-versatile-menu-error {
+  color: #000000;
+}
+
+/***** 画像と説明付きメニューCSS */
